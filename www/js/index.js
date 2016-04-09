@@ -20,7 +20,7 @@ var app = {
     // Application Constructor
     initialize: function () {
         this.bindEvents();
-        localStorage.clear();
+        this.initAll();
     },
     // Bind Event Listeners
     //
