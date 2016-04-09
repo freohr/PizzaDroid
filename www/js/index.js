@@ -67,6 +67,7 @@ var app = {
     },
     initPizzaDrink:function (){
         localStorage.clear();
+        localStorage.setItem("tableNumber",1);
         var pizzaList = [];
         localStorage.setItem("pizzaNumber",0);
         localStorage.setItem("pizzaList",JSON.stringify(pizzaList));
