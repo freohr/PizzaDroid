@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3b33060-2b62-4339-9e4b-50954ff8cc16" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/boisson.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/choix_pizza.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/paiement.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/summary.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/summary.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/boisson.html" afterPath="$PROJECT_DIR$/www/boisson.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/choix_pizza.html" afterPath="$PROJECT_DIR$/www/choix_pizza.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/index.js" afterPath="$PROJECT_DIR$/www/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/paiement.html" afterPath="$PROJECT_DIR$/www/paiement.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/summary.html" afterPath="$PROJECT_DIR$/www/summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/summary.js" afterPath="$PROJECT_DIR$/www/js/summary.js" />
     </list>
     <ignored path="PizzaDroid.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,21 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="23" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="337">
+              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -59,17 +40,27 @@
       <file leaf-file-name="summary.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/summary.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+            <state relative-caret-position="238">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
-                <element signature="n#!!block;n#generateCouvertsList#0;n#!!block;n#generateCouvertsummary#0;n#generateCouvertsummary#0;n#!!block;n#app#0;n#!!top" expanded="false" />
+                <element signature="e#364#1199#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="choix_pizza.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="choix_pizza.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/choix_pizza.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -173,8 +164,8 @@
         <option value="$PROJECT_DIR$/www/boisson.html" />
         <option value="$PROJECT_DIR$/www/paiement.html" />
         <option value="$PROJECT_DIR$/www/js/paiement.js" />
-        <option value="$PROJECT_DIR$/www/js/index.js" />
         <option value="$PROJECT_DIR$/www/js/summary.js" />
+        <option value="$PROJECT_DIR$/www/js/index.js" />
       </list>
     </option>
   </component>
@@ -437,7 +428,7 @@
       <option name="presentableId" value="Default" />
       <updated>1460206725566</updated>
       <workItem from="1460206726863" duration="372000" />
-      <workItem from="1460207154349" duration="10836000" />
+      <workItem from="1460207154349" duration="11401000" />
     </task>
     <task id="LOCAL-00001" summary="ajouts plugins Cordova">
       <created>1460214200913</created>
@@ -467,11 +458,18 @@
       <option name="project" value="LOCAL" />
       <updated>1460219917423</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ajout fichiers JS pour chaque page">
+      <created>1460220604911</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1460220604911</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11208000" />
+    <option name="totallyTimeSpent" value="11773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -512,7 +510,8 @@
     <MESSAGE value="modif gestion NFC" />
     <MESSAGE value="ajout fichiers manquants" />
     <MESSAGE value="travail sur initialisation des couverts" />
-    <option name="LAST_COMMIT_MESSAGE" value="travail sur initialisation des couverts" />
+    <MESSAGE value="ajout fichiers JS pour chaque page" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout fichiers JS pour chaque page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -637,27 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/summary.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-            <element signature="n#!!block;n#generateCouvertsList#0;n#!!block;n#generateCouvertsummary#0;n#generateCouvertsummary#0;n#!!block;n#app#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/boisson.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -686,6 +664,35 @@
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
             <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/summary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+            <element signature="e#364#1199#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -5,6 +5,14 @@
 var app = {
     
     initialize : function () {
+        app.generateCouvertsummary();
+    },
+
+    bindEvents : function () {
+
+    },
+
+    selectPizza : function(event) {
 
     },
 
@@ -47,3 +55,5 @@ var app = {
     },
 
 };
+
+app.initialize();

@@ -16,11 +16,19 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+function getRandomIntInclusive(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 var app = {
     // Application Constructor
     initialize: function () {
         this.bindEvents();
         localStorage.clear();
+
+        var tableNumber = getRandomIntInclusive(1, 10);
+
+        localStorage.setItem('tableNumber', tableNumber);
     },
     // Bind Event Listeners
     //
@@ -49,7 +57,7 @@ var app = {
 
         console.log(`${qty} couverts saisis`);
     },
-    
+
     onDeviceReady: function () {
         function failure(reason) {
             navigator.notification.alert(reason, function () {
