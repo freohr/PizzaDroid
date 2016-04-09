@@ -18,30 +18,26 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         this.bindEvents();
     },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
+    bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('paymentScreenLoaded', this.onPaymentScreenLoaded, false);
+        document.addEventListener('saveCouverts', this.onCouvertSaved, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        function failure(reason) {
-            navigator.notification.alert(reason, function() {}, "There was a problem");
-        }
-
-        app.receivedEvent('deviceready');
-
+    onPaymentScreenLoaded: function () {
         nfc.addNdefListener(
             app.onNdef,
-            function() {
+            function () {
                 console.log("Listening for NDEF tags.");
             },
             failure
@@ -52,7 +48,7 @@ var app = {
             // Android reads non-NDEF tag. BlackBerry and Windows don't.
             nfc.addTagDiscoveredListener(
                 app.onNfc,
-                function() {
+                function () {
                     console.log("Listening for non-NDEF tags.");
                 },
                 failure
@@ -65,17 +61,69 @@ var app = {
             nfc.addMimeTypeListener(
                 'text/pg',
                 app.onNdef,
-                function() {
+                function () {
                     console.log("Listening for NDEF mime tags with type text/pg.");
                 },
                 failure
             );
         }
+    },
 
+    onCouvertSaved: function () {
+        var parent = document.getElementById("couvertSelector");
+        var input = parent.querySelector('#couvertsNumber');
+        var qty = input.value;
+
+        function generateCouvertsList(nbCouverts) {
+            var ul = document.createElement('ul');
+            ul.id = 'pizzaList';
+
+            for (var i = 0; i < Math.min(nbCouverts, 10); i++) {
+                var li = document.createElement('li');
+                li.className = 'couvert ' + i;
+
+                var span = document.createElement('span');
+                span.className = 'couvertItem';
+
+                var buttonPizza = document.createElement('button');
+                buttonPizza.className = 'pizza ' + i;
+
+                span.appendChild(buttonPizza);
+
+                var buttonBoisson = document.createElement('button');
+                buttonBoisson.className = 'boisson ' + i;
+
+                span.appendChild(buttonBoisson);
+
+                li.appendChild(span);
+
+                ul.appendChild(li);
+            }
+
+            return ul;
+        }
+
+        var ul = generateCouvertsList(qty);
+
+        window.location = 'summary.html';
+
+
+        var summary = document.querySelector('#summary');
+        summary.appendChild(ul);
+
+        console.log(`${qty} couverts saisis`);
+    },
+
+    onDeviceReady: function () {
+        function failure(reason) {
+            navigator.notification.alert(reason, function () {
+            }, "There was a problem");
+        }
+
+        app.receivedEvent('deviceready');
 
     },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
+    receivedEvent: function (id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -94,8 +142,18 @@ var app = {
         console.log(JSON.stringify(nfcEvent.tag));
         // app.clearScreen();
 
+        function paymentAlertDismissed() {
+            // do something
+        }
+
         // tagContents.innerHTML = app.nonNdefTagTemplate(tag);
-        // navigator.notification.vibrate(100);
+        navigator.notification.vibrate(100);
+        navigator.notification.alert(
+            'Paiement recu!',  // message
+            paymentAlertDismissed,         // callback
+            '',
+            'Ok'                  // buttonName
+        )
     },
     onNdef: function (nfcEvent) {
 
@@ -103,6 +161,19 @@ var app = {
         // app.clearScreen();
 
         var tag = nfcEvent.tag;
+
+        function paymentAlertDismissed() {
+            // do something
+        }
+
+        // tagContents.innerHTML = app.nonNdefTagTemplate(tag);
+        navigator.notification.vibrate(100);
+        navigator.notification.alert(
+            'Paiement recu!',  // message
+            paymentAlertDismissed,         // callback
+            '',
+            'Ok'                  // buttonName
+        )
 
         // BB7 has different names, copy to Android names
         // if (tag.serialNumber) {

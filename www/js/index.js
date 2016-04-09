@@ -18,25 +18,30 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         this.bindEvents();
+        localStorage.clear();
     },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
+    bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
         document.addEventListener('paymentScreenLoaded', this.onPaymentScreenLoaded, false);
+        // document.addEventListener('saveCouverts', this.onCouvertSaved, false);
+
+        var saveButton = document.querySelector('#saveCouverts');
+        saveButton.addEventListener('click',this.onCouvertSaved, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onPaymentScreenLoaded: function() {
+    onPaymentScreenLoaded: function () {
         nfc.addNdefListener(
             app.onNdef,
-            function() {
+            function () {
                 console.log("Listening for NDEF tags.");
             },
             failure
@@ -47,7 +52,7 @@ var app = {
             // Android reads non-NDEF tag. BlackBerry and Windows don't.
             nfc.addTagDiscoveredListener(
                 app.onNfc,
-                function() {
+                function () {
                     console.log("Listening for non-NDEF tags.");
                 },
                 failure
@@ -60,7 +65,7 @@ var app = {
             nfc.addMimeTypeListener(
                 'text/pg',
                 app.onNdef,
-                function() {
+                function () {
                     console.log("Listening for NDEF mime tags with type text/pg.");
                 },
                 failure
@@ -68,15 +73,66 @@ var app = {
         }
     },
 
-    onDeviceReady: function() {
+    onCouvertSaved: function () {
+        var parent = document.getElementById("couvertSelector");
+        var input = parent.querySelector('#couvertsNumber');
+        var qty = input.value;
+
+        localStorage.setItem('qty', qty);
+
+        window.location = 'summary.html';
+
+        console.log(`${qty} couverts saisis`);
+    },
+
+    generateCouvertsummary: function() {
+        var qty = localStorage.getItem('qty');
+
+        function generateCouvertsList(nbCouverts) {
+            var ul = document.createElement('ul');
+            ul.id = 'pizzaList';
+
+            for (var i = 0; i < Math.min(nbCouverts, 10); i++) {
+                var li = document.createElement('li');
+                li.className = 'couvert ' + i;
+
+                var span = document.createElement('span');
+                span.className = 'couvertItem';
+
+                var buttonPizza = document.createElement('button');
+                buttonPizza.className = 'pizza ' + i;
+
+                span.appendChild(buttonPizza);
+
+                var buttonBoisson = document.createElement('button');
+                buttonBoisson.className = 'boisson ' + i;
+
+                span.appendChild(buttonBoisson);
+
+                li.appendChild(span);
+
+                ul.appendChild(li);
+            }
+
+            return ul;
+        }
+
+        var ul = generateCouvertsList(qty);
+
+        var summary = document.querySelector('#summary');
+        summary.appendChild(ul);
+    },
+
+    onDeviceReady: function () {
         function failure(reason) {
-            navigator.notification.alert(reason, function() {}, "There was a problem");
+            navigator.notification.alert(reason, function () {
+            }, "There was a problem");
         }
 
         app.receivedEvent('deviceready');
 
     },
-    receivedEvent: function(id) {
+    receivedEvent: function (id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
