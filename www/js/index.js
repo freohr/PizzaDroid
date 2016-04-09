@@ -55,6 +55,15 @@ var app = {
             navigator.notification.alert(reason, function () {
             }, "There was a problem");
         }
+    },
+    initPizza:function (){
+        localStorage.clear();
+        var pizzaList = [];
+        localStorage.setItem("pizzaNumber",0);
+        localStorage.setItem("pizzaList",JSON.stringify(pizzaList));
+        var drinkList = [];
+        localStorage.setItem("drinkNumber",0);
+        localStorage.setItem("drinkList",JSON.stringify(drinkList));
     }
 };
 
