@@ -61,6 +61,46 @@ var app = {
         var summary = document.querySelector('#summary');
         summary.appendChild(ul);
     },
+    
+    getPizzas:function(){
+        var tableNumberStr = localStorage.getItem("tableNumber");
+        var tableNumber = parseInt(tableNumberStr);
+        var pizzaList = JSON.parse(localStorage.getItem("pizzaList"));
+        var pizzaNumberStr = localStorage.getItem("pizzaNumber");
+        pizzaNumber = parseInt(pizzaNumberStr);
+        for (i=0;i<pizzaNumber;i++){
+            console.log(pizzaList[i]);
+            if(pizzaList[i].tableNumber=tableNumber){
+                var node = document.createElement("LI");                 // Create a <li> node
+                var pizzaName = pizzaList[i].name;
+                var textnode = document.createTextNode(pizzaName);         // Create a text node
+                node.appendChild(textnode);                              // Append the text to <li>
+                document.getElementById("pizzaList").appendChild(node);
+            }else{
+                console.log("nope");
+            }
+        }
+    },
+
+    getDrinks:function(){
+        var tableNumberStr = localStorage.getItem("tableNumber");
+        var tableNumber = parseInt(tableNumberStr);
+        var drinkList = JSON.parse(localStorage.getItem("drinkList"));
+        var drinkNumberStr = localStorage.getItem("drinkNumber");
+        drinkNumber = parseInt(drinkNumberStr);
+        for (i=0;i<drinkNumber;i++){
+            console.log(pizzaList[i]);
+            if(drinkList[i].tableNumber=tableNumber){
+                var node = document.createElement("LI");                 // Create a <li> node
+                var drinkName = drinkList[i].name;
+                var textnode = document.createTextNode(drinkName);         // Create a text node
+                node.appendChild(textnode);                              // Append the text to <li>
+                document.getElementById("drinkList").appendChild(node);
+            }else{
+                console.log("nope");
+            }
+        }
+    }
 
 };
 
