@@ -1,7 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3b33060-2b62-4339-9e4b-50954ff8cc16" name="Default" comment="" />
+    <list default="true" id="f3b33060-2b62-4339-9e4b-50954ff8cc16" name="Default" comment="ajouts plugins Cordova">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/es/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/ko/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/zh/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ios/CDVNotification.bundle/beep.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/wp/notification-beep.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/blackberry10/notification-beep.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/danger-press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/danger.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/gradient.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/pattern.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/recommend.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/blackberry10/native/device/libVibration.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/blackberry10/native/simulator/libVibration.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/doc/phonegap_build.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/doc/read_tag_1_basic_app.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/doc/read_tag_2_dump_tag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/doc/read_tag_3_payload_as_string.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/NOTICE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/RELEASENOTES.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/de/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/de/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/es/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/es/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/fr/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/fr/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/it/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/it/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/ja/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/ja/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/ko/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/ko/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/pl/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/pl/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/ru/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/zh/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/doc/zh/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/android/Device.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/blackberry10/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/browser/DeviceProxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/firefoxos/DeviceProxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/ios/CDVDevice.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/ios/CDVDevice.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/osx/CDVDevice.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/osx/CDVDevice.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/tizen/DeviceProxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/ubuntu/device.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/ubuntu/device.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/ubuntu/device.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/windows/DeviceProxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/wp/Device.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/tests/plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/tests/tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/www/device.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/NOTICE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/RELEASENOTES.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/de/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/de/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/es/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/fr/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/fr/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/it/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/it/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/ja/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/ja/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/ko/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/pl/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/pl/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/ru/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/zh/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/android/Notification.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/blackberry10/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/firefoxos/notification.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ios/CDVNotification.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ios/CDVNotification.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ubuntu/notification.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ubuntu/notification.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ubuntu/notification.qml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/windows/NotificationProxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/wp/Notification.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/wp/NotificationBox.xaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/wp/NotificationBox.xaml.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/tests/plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/tests/tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/android/notification.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/blackberry10/beep.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/browser/notification.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/notification.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/notification.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/NOTICE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/RELEASENOTES.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/de/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/de/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/es/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/es/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/fr/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/fr/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/it/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/it/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/ja/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/ja/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/ko/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/ko/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/pl/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/pl/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/ru/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/zh/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/doc/zh/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/android/Vibration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/blackberry10/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/blackberry10/native/.cproject" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/blackberry10/native/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/blackberry10/native/public/plugin.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/blackberry10/native/public/plugin.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/blackberry10/native/public/tokenizer.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/blackberry10/native/public/tokenizer.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/blackberry10/native/src/vibration_js.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/blackberry10/native/src/vibration_js.hpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/browser/Vibration.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/firefoxos/VibrationProxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/ios/CDVVibration.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/ios/CDVVibration.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/tizen/VibrationProxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/ubuntu/vibration.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/ubuntu/vibration.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/windows/Vibration/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/windows/Vibration/Properties/AssemblyInfo.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/windows/Vibration/Vibration.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/windows/Vibration/Vibration.csproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/windows/VibrationProxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/wp/Vibration.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/tests/plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/tests/tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/www/blackberry10/vibrate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/www/vibration.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/CHANGES.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/doc/GettingStartedBlackBerry10.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/doc/GettingStartedCLI.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/doc/GettingStartedPhoneGapBuild.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/src/android/src/com/chariotsolutions/nfc/plugin/Util.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/src/blackberry10/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/src/webworks/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/src/webworks/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/src/webworks/src/com/chariotsolutions/nfc/plugin/Util.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/src/windows-phone-8/Ndef.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/src/windows-phone-8/NfcPlugin.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/src/windows/nfc-plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/tests/plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/tests/tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/www/phonegap-nfc-blackberry.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/phonegap-nfc/www/phonegap-nfc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/boisson.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/choix_pizza.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/paiement.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/android.json" afterPath="$PROJECT_DIR$/platforms/android/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/index.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/android.json" afterPath="$PROJECT_DIR$/plugins/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/index.js" afterPath="$PROJECT_DIR$/www/js/index.js" />
+    </list>
     <ignored path="PizzaDroid.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,18 +211,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="255">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="device.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-device/www/device.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -43,14 +245,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logo.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/img/logo.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="summary.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/summary.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="choix_pizza.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/choix_pizza.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boisson.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/boisson.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paiement.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/paiement.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/www/choix_pizza.html" />
+        <option value="$PROJECT_DIR$/www/boisson.html" />
+        <option value="$PROJECT_DIR$/www/paiement.html" />
+        <option value="$PROJECT_DIR$/www/summary.html" />
+        <option value="$PROJECT_DIR$/www/js/index.js" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsBuildToolPackageJson" detection-done="true" />
@@ -63,7 +319,7 @@
     <option name="width" value="1616" />
     <option name="height" value="886" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -198,8 +454,29 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="SearchEverywhereHistoryKey" value="new&#9;ACTION&#9;NewGroup" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RunManager" selected="PhoneGap/Cordova.Pizza">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="PhoneGap" factoryName="PhoneGap/Cordova">
       <option name="myExecutable" />
       <option name="myWorkDir" />
@@ -209,6 +486,35 @@
       <option name="myExtraArgs" />
       <option name="hasTarget" value="false" />
       <option name="target" />
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
     <configuration default="false" name="Pizza" type="PhoneGap" factoryName="PhoneGap/Cordova">
@@ -240,24 +546,25 @@
       <option name="presentableId" value="Default" />
       <updated>1460206725566</updated>
       <workItem from="1460206726863" duration="372000" />
-      <workItem from="1460207154349" duration="1357000" />
+      <workItem from="1460207154349" duration="4441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1729000" />
+    <option name="totallyTimeSpent" value="4813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24968314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1539924" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29801324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -279,6 +586,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ajouts plugins Cordova" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajouts plugins Cordova" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -308,7 +619,52 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/index.js">
+    <entry file="file://$PROJECT_DIR$/www/choix_pizza.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/boisson.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/paiement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/summary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-device/www/device.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -318,16 +674,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/img/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/plugins/phonegap-nfc/tests/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
+    <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-vibration/src/blackberry10/native/public/tokenizer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state relative-caret-position="153">
+          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
