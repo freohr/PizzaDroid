@@ -29,6 +29,7 @@ var app = {
         var tableNumber = getRandomIntInclusive(1, 10);
 
         localStorage.setItem('tableNumber', tableNumber);
+        this.initPizzaDrink();
     },
     // Bind Event Listeners
     //
@@ -63,6 +64,15 @@ var app = {
             navigator.notification.alert(reason, function () {
             }, "There was a problem");
         }
+    },
+    initPizzaDrink:function (){
+        localStorage.clear();
+        var pizzaList = [];
+        localStorage.setItem("pizzaNumber",0);
+        localStorage.setItem("pizzaList",JSON.stringify(pizzaList));
+        var drinkList = [];
+        localStorage.setItem("drinkNumber",0);
+        localStorage.setItem("drinkList",JSON.stringify(drinkList));
     }
 };
 
