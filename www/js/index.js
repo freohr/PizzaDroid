@@ -27,18 +27,13 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('paymentScreenLoaded', this.onPaymentScreenLoaded, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        function failure(reason) {
-            navigator.notification.alert(reason, function() {}, "There was a problem");
-        }
-
-        app.receivedEvent('deviceready');
-
+    onPaymentScreenLoaded: function() {
         nfc.addNdefListener(
             app.onNdef,
             function() {
@@ -71,10 +66,16 @@ var app = {
                 failure
             );
         }
+    },
 
+    onDeviceReady: function() {
+        function failure(reason) {
+            navigator.notification.alert(reason, function() {}, "There was a problem");
+        }
+
+        app.receivedEvent('deviceready');
 
     },
-    // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
@@ -94,8 +95,18 @@ var app = {
         console.log(JSON.stringify(nfcEvent.tag));
         // app.clearScreen();
 
+        function paymentAlertDismissed() {
+            // do something
+        }
+
         // tagContents.innerHTML = app.nonNdefTagTemplate(tag);
-        // navigator.notification.vibrate(100);
+        navigator.notification.vibrate(100);
+        navigator.notification.alert(
+            'Paiement recu!',  // message
+            paymentAlertDismissed,         // callback
+            '',
+            'Ok'                  // buttonName
+        )
     },
     onNdef: function (nfcEvent) {
 
@@ -103,6 +114,19 @@ var app = {
         // app.clearScreen();
 
         var tag = nfcEvent.tag;
+
+        function paymentAlertDismissed() {
+            // do something
+        }
+
+        // tagContents.innerHTML = app.nonNdefTagTemplate(tag);
+        navigator.notification.vibrate(100);
+        navigator.notification.alert(
+            'Paiement recu!',  // message
+            paymentAlertDismissed,         // callback
+            '',
+            'Ok'                  // buttonName
+        )
 
         // BB7 has different names, copy to Android names
         // if (tag.serialNumber) {
