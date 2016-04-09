@@ -1,3 +1,9 @@
-button{
-	color : red;
+button {
+    height: 75px;
+    width: 150px;
+    margin: 25px;
+}
+
+ul {
+    list-style-type: none;
 }
