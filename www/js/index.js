@@ -20,7 +20,7 @@ var app = {
     // Application Constructor
     initialize: function () {
         this.bindEvents();
-        this.initAll();
+        this.initPizzaDrink();
     },
     // Bind Event Listeners
     //
@@ -56,7 +56,7 @@ var app = {
             }, "There was a problem");
         }
     },
-    initPizza:function (){
+    initPizzaDrink:function (){
         localStorage.clear();
         var pizzaList = [];
         localStorage.setItem("pizzaNumber",0);
