@@ -8,17 +8,17 @@ var app = {
         this.generatePizzaList();
     },
 
-    temp: function(event) {
+    temp: function (event) {
 
     },
 
-    generatePizzaList : function() {
+    generatePizzaList: function () {
         var pizzaList = JSON.parse(localStorage.getItem('pizzaMenu'));
 
         var ulPizza = document.createElement('ul');
         ulPizza.className = 'menu-list';
 
-        _.each(pizzaList, function(item, index) {
+        _.each(pizzaList, function (item, index) {
             var li = document.createElement('li');
             var button = document.createElement('button');
             button.className = 'waves-effect waves-light waves-teal btn';
@@ -48,16 +48,16 @@ var app = {
         var tableNumberStr = localStorage.getItem("tableNumber");
         var tableNumber = parseInt(tableNumberStr);
         console.log(tableNumberStr);
-        var pizza = {"name":pizzaName,"table":tableNumber,"price":pizzaPrice};
+        var pizza = {"name": pizzaName, "table": tableNumber, "price": pizzaPrice};
         pizzaList.push(pizza);
         localStorage.setItem("pizzaList", JSON.stringify(pizzaList));
         //pizza number
         var pizzaNumberStr = localStorage.getItem("pizzaNumber");
-        pizzaNumber = parseInt(pizzaNumberStr)+1;
-        localStorage.setItem("pizzaNumber",pizzaNumber);
+        pizzaNumber = parseInt(pizzaNumberStr) + 1;
+        localStorage.setItem("pizzaNumber", pizzaNumber);
         //pizzaTableList
         var tablePizzaList = localStorage.getItem('tablePizzaList');
-        tablePizzaList[id] = {"name":pizzaName,"price":pizzaPrice};
+        tablePizzaList[id] = {"name": pizzaName, "price": pizzaPrice};
     }
 };
 

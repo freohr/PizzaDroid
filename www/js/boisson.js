@@ -9,17 +9,17 @@ app = {
         this.generateDrinkList();
     },
 
-    temp: function(event) {
+    temp: function (event) {
 
     },
 
-    generateDrinkList : function() {
+    generateDrinkList: function () {
         var drinkList = JSON.parse(localStorage.getItem('drinkMenu'));
 
         var ulDrink = document.createElement('ul');
         ulDrink.className = 'menu-list';
 
-        _.each(drinkList, function(item, index) {
+        _.each(drinkList, function (item, index) {
             var li = document.createElement('li');
             var button = document.createElement('button');
             button.className = 'waves-effect waves-light waves-teal btn';
@@ -49,7 +49,7 @@ app = {
         localStorage.setItem("drinkNumber", drinkNumber);
     },
 
-    chooseDrink : function(event) {
+    chooseDrink: function (event) {
 
         var source = event.target;
         var id = source.id;
@@ -83,7 +83,7 @@ app = {
 
             ul.appendChild(li);
         });
-        
+
         var content = document.querySelector('#content');
         content.appendChild(ul);
     }
