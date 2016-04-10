@@ -24,7 +24,7 @@ var app = {
             button.className = 'waves-effect waves-light waves-teal btn';
             button.id = index;
             button.textContent = item.name + ' : ' + item.price + '€';
-            button.addEventListener('click', this.temp, false);
+            button.addEventListener('click', this.addPizza, false);
 
             li.appendChild(button);
             ulPizza.appendChild(li);
@@ -34,7 +34,7 @@ var app = {
         summary.appendChild(ulPizza);
     },
 
-    addPizza: function () {
+    addPizza: function (event) {
         //pizza
         console.log(localStorage.getItem("pizzaList"));
         var choosenPizza = localStorage.getItem('currentChosenPizza');
