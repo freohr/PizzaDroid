@@ -21,6 +21,10 @@ ul.summary-list {
     width: 100%;
 }
 
+#valid-button {
+    margin: 100px;
+}
+
 #summary {
     width: 60%;
     margin: auto;

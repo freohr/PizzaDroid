@@ -39,7 +39,7 @@ var app = {
         var drink = {};
         drink.name = "Choisir une boisson";
 
-        tableDrinkList[i] = drink;
+        tableDrinkList[qty] = drink;
 
         localStorage.setItem('tableDrinkList', JSON.stringify(tableDrinkList));
         localStorage.setItem('currentChosenDrink', qty);
@@ -73,7 +73,7 @@ var app = {
 
     generatePizzasSummary: function () {
         var tablePizzaList = JSON.parse(localStorage.getItem('tablePizzaList'));
-        var qty = localStorage.getItem('qty');
+        var qty = localStorage.getItem('qtyPizza');
 
         var ulPizza = document.querySelector('div.left .summary-list');
 
@@ -95,7 +95,7 @@ var app = {
 
     generateDrinksSummary: function () {
         var tableDrinkList = JSON.parse(localStorage.getItem('tableDrinkList'));
-        var qty = localStorage.getItem('qty');
+        var qty = localStorage.getItem('qtyDrink');
 
         var ulDrink = document.querySelector('div.right .summary-list');
 
