@@ -29,6 +29,9 @@ var app = {
             li.appendChild(button);
             ulPizza.appendChild(li);
         });
+
+        var summary = document.querySelector('div#summary');
+        summary.appendChild(ulPizza);
     },
 
     addPizza: function () {

@@ -30,6 +30,9 @@ app = {
             li.appendChild(button);
             ulDrink.appendChild(li);
         });
+
+        var summary = document.querySelector('div#summary');
+        summary.appendChild(ulDrink);
     },
 
     addDrink: function () {
