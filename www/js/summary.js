@@ -6,23 +6,64 @@ var app = {
 
     initialize: function () {
         app.generateCouvertSummary();
+        this.bindEvents();
     },
 
     bindEvents: function () {
+        var buttonPizza = document.querySelector('button#add-pizza');
+        buttonPizza.addEventListener('click', this.onAddPizza, false);
 
+        var buttonDrink = document.querySelector('button#add-drink');
+        buttonDrink.addEventListener('click', this.onAddDrink, false);
     },
 
+    onAddPizza: function (event) {
+        var tablePizzaList = JSON.parse(localStorage.getItem('tablePizzaList'));
+        var qty = localStorage.getItem('qtyPizza');
+
+        var pizza = {};
+        pizza.name = "Choisir une pizza"
+        tablePizzaList[qty] = pizza;
+
+        localStorage.setItem('tablePizzaList', JSON.stringify(tablePizzaList));
+        localStorage.setItem('currentChosenPizza', qty);
+        localStorage.setItem('qtyPizza', ++qty);
+
+        window.location = 'choix_pizza.html';
+
+    },
+    onAddDrink: function (event) {
+        var tableDrinkList = JSON.parse(localStorage.getItem('tableDrinkList'));
+        var qty = localStorage.getItem('qtyDrink');
+
+        var drink = {};
+        drink.name = "Choisir une boisson";
+
+        tableDrinkList[i] = drink;
+
+        localStorage.setItem('tableDrinkList', JSON.stringify(tableDrinkList));
+        localStorage.setItem('currentChosenDrink', qty);
+        localStorage.setItem('qtyDrink', ++qty);
+
+        window.location = 'boisson.html';
+    },
     selectPizza: function (event) {
         var source = event.target;
         var id = source.id;
 
         localStorage.setItem('currentChosenPizza', id);
 
+        window.location = 'choix_pizza.html';
+
     },
 
     selectDrink: function (event) {
         var source = event.target;
         var id = source.id;
+
+        localStorage.setItem('currentChosenDrink', id);
+
+        window.location = 'boisson.html';
     },
 
     generateCouvertSummary: function () {

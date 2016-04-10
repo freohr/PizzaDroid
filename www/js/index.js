@@ -53,6 +53,8 @@ var app = {
         var qty = input.value;
 
         localStorage.setItem('qty', qty);
+        localStorage.setItem('qtyPizza', qty);
+        localStorage.setItem('qtyDrink', qty);
 
         var tablePizzaList = new Array();
         var tableDrinkList = new Array();
