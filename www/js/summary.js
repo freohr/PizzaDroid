@@ -15,6 +15,24 @@ var app = {
 
         var buttonDrink = document.querySelector('button#add-drink');
         buttonDrink.addEventListener('click', this.onAddDrink, false);
+
+        var buttonValid = document.querySelector('button#valid-button');
+        buttonValid.addEventListener('click', this.onValidCommand, false);
+    },
+
+    onValidCommand: function() {
+        function onConfirmValid (index) {
+            if(index === 1) {
+                window.location = 'paiement.html';
+            }
+        }
+
+        navigator.notification.confirm(
+            'Souhaitez-vous confirmer la commande?',
+            onConfirmValid,
+            'Confirmation de Commande',
+            ['Oui', 'Annuler']
+        );
     },
 
     onAddPizza: function (event) {
@@ -56,7 +74,6 @@ var app = {
         window.location = 'choix_pizza.html';
 
     },
-
     selectDrink: function (event) {
         var source = event.target;
         var id = source.id;
@@ -92,7 +109,6 @@ var app = {
             ulPizza.appendChild(li);
         }
     },
-
     generateDrinksSummary: function () {
         var tableDrinkList = JSON.parse(localStorage.getItem('tableDrinkList'));
         var qty = localStorage.getItem('qtyDrink');
