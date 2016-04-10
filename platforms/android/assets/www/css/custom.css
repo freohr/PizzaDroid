@@ -1,3 +1,46 @@
-button{
-	color : red;
+button.btn-flat {
+    width: 75%;
+    height: 50px;
+}
+
+li{
+    margin-bottom: 5px;
+}
+
+#couvertSelector {
+    text-align: center;
+}
+
+div.input-container {
+    width: 8%;
+    margin: auto;
+}
+
+div.left, div.right {
+    width: 50%;
+    display: inline-block;
+}
+
+ul.summary-list {
+    width: 100%;
+}
+
+ul.menu-list {
+    width: 50%;
+    margin:auto;
+}
+
+#valid-button {
+    margin: 100px;
+}
+
+#summary {
+    width: 60%;
+    margin: auto;
+}
+
+#summary::after {
+    display: block;
+    content: "";
+    clear: both;
 }

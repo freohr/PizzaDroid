@@ -73,7 +73,7 @@ var app = {
         localStorage.setItem('tablePizzaList', JSON.stringify(tablePizzaList));
         localStorage.setItem('tableDrinkList', JSON.stringify(tableDrinkList));
 
-        window.location = 'summary.html';
+        window.location.href = 'summary.html';
 
         console.log(`${qty} couverts saisis`);
     },

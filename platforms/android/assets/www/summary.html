@@ -10,6 +10,9 @@
           content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Selection Repas</title>
 
@@ -17,13 +20,28 @@
 </head>
 <body>
 
-<div id="bloc">
+<div class="app">
 
-    <h1>PizzaDroid</h1>
+    <h1>Table en cours</h1>
     <div id="summary">
+        <div class="left">
+            <ul class="summary-list"></ul>
+            <button class="btn-floating btn-large waves-effect waves-light waves-teal" id="add-pizza"><i class="material-icons">+</i></button>
+        </div>
+        <div class="right">
+            <ul class="summary-list"></ul>
+            <button class="btn-floating btn-large waves-effect waves-light waves-teal" id="add-drink"><i class="material-icons">+</i></button>
+        </div>
 
     </div>
+
+    <button class="waves-effect waves-light waves-teal btn" id="valid-button">Commander</button>
 </div>
 
+<script type="text/javascript" src="cordova.js"></script>
+<script src="js/libs/underscore-min.js"></script>
+<script src="js/libs/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/summary.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 </html>

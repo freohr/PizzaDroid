@@ -23,7 +23,7 @@ var app = {
     onValidCommand: function() {
         function onConfirmValid (index) {
             if(index === 1) {
-                window.location = 'paiement.html';
+                window.location.href = 'paiement.html';
             }
         }
 
@@ -47,7 +47,7 @@ var app = {
         localStorage.setItem('currentChosenPizza', qty);
         localStorage.setItem('qtyPizza', ++qty);
 
-        window.location = 'choix_pizza.html';
+        window.location.href = 'choix_pizza.html';
 
     },
     onAddDrink: function (event) {
@@ -63,7 +63,7 @@ var app = {
         localStorage.setItem('currentChosenDrink', qty);
         localStorage.setItem('qtyDrink', ++qty);
 
-        window.location = 'boisson.html';
+        window.location.href = 'boisson.html';
     },
     selectPizza: function (event) {
         var source = event.target;
@@ -71,7 +71,7 @@ var app = {
 
         localStorage.setItem('currentChosenPizza', id);
 
-        window.location = 'choix_pizza.html';
+        window.location.href = 'choix_pizza.html';
 
     },
     selectDrink: function (event) {
@@ -80,7 +80,7 @@ var app = {
 
         localStorage.setItem('currentChosenDrink', id);
 
-        window.location = 'boisson.html';
+        window.location.href = 'boisson.html';
     },
 
     generateCouvertSummary: function () {
