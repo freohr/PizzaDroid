@@ -29,6 +29,15 @@ app = {
 
     chooseDrink : function(event) {
 
+        var source = event.target;
+        var id = source.id;
+
+        var cmdNumber = localStorage.getItem('currentDrinkOrder');
+
+        var drinkList = JSON.parse(localStorage.getItem('drinkList'));
+
+        var tableDrinkList = JSON.parse(localStorage.getItem('tableDrinkList'));
+
     },
 
     initDrinkList: function () {
@@ -44,7 +53,9 @@ app = {
 
             var button = document.createElement('button');
 
-            button.className = li.className;
+            button.className = 'drink';
+            button.id = index;
+            button.addEventListener('click', app.chooseDrink, false);
 
             li.appendChild(button);
 

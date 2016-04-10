@@ -2,13 +2,10 @@
  * Created by stephen on 09/04/2016.
  */
 
-
-
-
 var app = {
 
     initialize: function () {
-        app.generateCouvertsummary();
+        app.generateCouvertSummary();
     },
 
     bindEvents: function () {
@@ -16,55 +13,69 @@ var app = {
     },
 
     selectPizza: function (event) {
-
-        event.target;
-
-    },
-
-    selectBoisson: function (event) {
+        var source = event.target;
+        var id = source.id;
 
     },
 
-    generateCouvertsList: function (nbCouverts) {
-        var ul = document.createElement('ul');
-        ul.id = 'pizzaList';
-
-        for (var i = 0; i < Math.min(nbCouverts, 10); i++) {
-            var li = document.createElement('li');
-            li.className = 'couvert ' + i;
-
-            var span = document.createElement('span');
-            span.className = 'couvertItem';
-
-            var buttonPizza = document.createElement('button');
-            buttonPizza.className = 'pizza ' + i;
-            buttonPizza.innerHTML = 'Choisir une pizza';
-
-            span.appendChild(buttonPizza);
-
-            var buttonBoisson = document.createElement('button');
-            buttonBoisson.className = 'boisson ' + i;
-            buttonBoisson.innerHTML = 'Choisir une boisson';
-
-            span.appendChild(buttonBoisson);
-
-            li.appendChild(span);
-
-            ul.appendChild(li);
-        }
-
-        return ul;
+    selectDrink: function (event) {
+        var source = event.target;
+        var id = source.id;
     },
 
-    generateCouvertsummary: function () {
+    generateCouvertSummary: function () {
+        this.generatePizzasSummary();
+        this.generateDrinksSummary();
+    },
+
+    generatePizzasSummary: function () {
+        var tablePizzaList = localStorage.getItem('tablePizzaList');
         var qty = localStorage.getItem('qty');
 
+        var ulPizza = document.createElement('ul');
+        ulPizza.className = 'summaryList';
 
-        var ulPizza = this.getPizzas(qty);
-        var ulDrinks = this.getDrinks();
+        for (var i = 0; i < qty; i++) {
+            var pizza = tablePizzaList[i.toString()];
+
+            var li = document.createElement('li');
+            var button = document.createElement('button');
+            button.className = 'pizza';
+            button.id = i;
+            button.addEventListener('click', this.selectPizza, false);
+
+            li.appendChild(button);
+
+            ulPizza.appendChild(li);
+        }
 
         var summary = document.querySelector('#summary');
-        summary.appendChild(ul);
+        summary.appendChild(ulPizza);
+    },
+
+    generateDrinksSummary: function () {
+        var tableDrinkList = localStorage.getItem('tableDrinkList');
+        var qty = localStorage.getItem('qty');
+
+        var ulDrink = document.createElement('ul');
+        ulDrink.className = 'summaryList';
+
+        for (var i = 0; i < qty; i++) {
+            var drink = tableDrinkList[i.toString()];
+
+            var li = document.createElement('li');
+            var button = document.createElement('button');
+            button.className = 'drink';
+            button.id = i;
+            button.addEventListener('click', this.selectDrink, false);
+
+            li.appendChild(button);
+
+            ulDrink.appendChild(li);
+        }
+
+        var summary = document.querySelector('#summary');
+        summary.appendChild(ulDrink);
     },
 
     getPizzas: function () {

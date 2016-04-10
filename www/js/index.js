@@ -54,6 +54,23 @@ var app = {
 
         localStorage.setItem('qty', qty);
 
+        var tablePizzaList = [];
+        var tableDrinkList = [];
+
+        for(var i = 0; i < qty; i++) {
+            var drink = {};
+            drink.name = "Choisir une boisson";
+
+            tableDrinkList.append(`${i}`, drink);
+
+            var pizza = {};
+            pizza.name = "Choisir une pizza"
+            tablePizzaList.append(`${i}`, pizza);
+        }
+
+        localStorage.setItem('tablePizzaList', tablePizzaList);
+        localStorage.setItem('tableDrinkList', tableDrinkList);
+
         window.location = 'summary.html';
 
         console.log(`${qty} couverts saisis`);
