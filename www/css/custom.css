@@ -1,12 +1,15 @@
-button {
-    height: 75px;
-    width: 150px;
-    margin: 25px;
-}
-
 button.btn-flat {
     width: 50%;
     height: 20%;
+}
+
+#couvertSelector {
+    text-align: center;
+}
+
+div.input-container {
+    width: 25%;
+    margin: auto;
 }
 
 ul.summaryList {
@@ -20,7 +23,7 @@ ul.summaryList {
 }
 
 #summary::after {
-    display:block;
-    content:"";
-    clear:both;
+    display: block;
+    content: "";
+    clear: both;
 }
