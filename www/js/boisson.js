@@ -37,17 +37,29 @@ app = {
 
     addDrink: function () {
         //drink
+        var choosenDrink = localStorage.getItem('currentChosenDrink');
+        //get pizza name and price in the menu
+        var source = event.target;
+        var id = source.id;
+        var drinkMenu = localStorage.getItem("drinkMenu");
+        var drinkName = drinkMenu[id].name;
+        var drinkPrice = drinkMenu[id].price;
         var drinkList = JSON.parse(localStorage.getItem("drinkList"));
         var tableNumberStr = localStorage.getItem("tableNumber");
         var tableNumber = parseInt(tableNumberStr);
-        var drink = {"name": "pizzaName", "table": tableNumber, "price": "pizzaPrice"};
+        var drink = {"name": drinkName, "table": tableNumber, "price":drinkPrice};
         drinkList.push(drink);
         localStorage.setItem("drinkList", JSON.stringify(drinkList));
         //drink number
         var drinkNumberStr = localStorage.getItem("drinkNumber");
         drinkNumber = parseInt(drinkNumberStr) + 1;
         localStorage.setItem("drinkNumber", drinkNumber);
+
+        //drinkTableList
+        var tableDrinkList = localStorage.getItem('tableDrinkList');
+        tableDrinkList[id] = {"name":drinkName,"price":drinkPrice};
     },
+
 
     chooseDrink: function (event) {
 
