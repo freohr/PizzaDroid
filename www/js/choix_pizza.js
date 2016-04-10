@@ -1,10 +1,34 @@
+import * as _ from "./libs/underscore-min";
 /**
- * Created by stephen on 09/04/2016.
+ * Created by stephen
  */
 
 var app = {
     initialize: function () {
+        this.generatePizzaList();
+    },
 
+    temp: function(event) {
+
+    },
+
+    generatePizzaList : function() {
+        var pizzaList = JSON.parse(localStorage.getItem('pizzaMenu'));
+
+        var ulPizza = document.createElement('ul');
+        ulPizza.className = 'menu-list';
+
+        _.each(pizzaList, function(item, index) {
+            var li = document.createElement('li');
+            var button = document.createElement('button');
+            button.className = 'waves-effect waves-light waves-teal btn';
+            button.id = index;
+            button.textContent = item.name + ' : ' + item.price + '€';
+            button.addEventListener('click', this.temp, false);
+
+            li.appendChild(button);
+            ulPizza.appendChild(li);
+        });
     },
 
     addPizza: function () {

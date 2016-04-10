@@ -94,7 +94,7 @@ var app = {
         localStorage.setItem("drinkNumber",0);
         localStorage.setItem("drinkList",JSON.stringify(drinkList));
         //pizzaMenu
-        var pizzaMenu = '[{"name":"4fromages","price":"10"},{"name":"chevre/miel","price":"10.5"},{"name":"savoyarde","price":"11"},{"name":"carnivore","price":"12"},{"name":"raclette","price":"12.5"},{"name":"foie gras","price":"13"}]';
+        var pizzaMenu = '[{"name":"4 Fromages","price":"10"},{"name":"Chevre/miel","price":"10.5"},{"name":"savoyarde","price":"11"},{"name":"carnivore","price":"12"},{"name":"raclette","price":"12.5"},{"name":"foie gras","price":"13"}]';
         //drinkMenu
         var drinkMenu = '[{"name":"eau","price":"0"},{"name":"coca","price":"1.5"},{"name":"jus d\'orange","price":"1.5"},{"name":"vin blanc","price":"2"},{"name":"vin rouge","price":"2"},{"name":"chanpagne","price":"5"}]';
         localStorage.setItem("pizzaMenu",pizzaMenu);

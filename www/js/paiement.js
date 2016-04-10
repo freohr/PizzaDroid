@@ -1,10 +1,10 @@
 /**
- * Created by stephen on 09/04/2016.
+ * Created by stephen
  */
 
 var app = {
     initialize : function () {
-
+        this.bindEvents();
     },
 
     bindEvents : function () {

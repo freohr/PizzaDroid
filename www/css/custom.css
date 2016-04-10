@@ -3,6 +3,10 @@ button.btn-flat {
     height: 50px;
 }
 
+li{
+    margin-bottom: 5px;
+}
+
 #couvertSelector {
     text-align: center;
 }
@@ -19,6 +23,11 @@ div.left, div.right {
 
 ul.summary-list {
     width: 100%;
+}
+
+ul.menu-list {
+    width: 50%;
+    margin:auto;
 }
 
 #valid-button {
