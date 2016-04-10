@@ -16,6 +16,8 @@ var app = {
         var source = event.target;
         var id = source.id;
 
+        localStorage.setItem('currentChosenPizza', id);
+
     },
 
     selectDrink: function (event) {
@@ -32,8 +34,7 @@ var app = {
         var tablePizzaList = JSON.parse(localStorage.getItem('tablePizzaList'));
         var qty = localStorage.getItem('qty');
 
-        var ulPizza = document.createElement('ul');
-        ulPizza.className = 'summaryList';
+        var ulPizza = document.querySelector('div.left .summary-list');
 
         for (var i = 0; i < qty; i++) {
             var pizza = tablePizzaList[i.toString()];
@@ -49,17 +50,13 @@ var app = {
 
             ulPizza.appendChild(li);
         }
-
-        var summary = document.querySelector('#summary');
-        summary.appendChild(ulPizza);
     },
 
     generateDrinksSummary: function () {
         var tableDrinkList = JSON.parse(localStorage.getItem('tableDrinkList'));
         var qty = localStorage.getItem('qty');
 
-        var ulDrink = document.createElement('ul');
-        ulDrink.className = 'summaryList';
+        var ulDrink = document.querySelector('div.right .summary-list');
 
         for (var i = 0; i < qty; i++) {
             var drink = tableDrinkList[i.toString()];
@@ -75,9 +72,6 @@ var app = {
 
             ulDrink.appendChild(li);
         }
-
-        var summary = document.querySelector('#summary');
-        summary.appendChild(ulDrink);
     },
 
     getPizzas: function () {

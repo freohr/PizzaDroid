@@ -1,6 +1,6 @@
 button.btn-flat {
-    width: 50%;
-    height: 20%;
+    width: 75%;
+    height: 50px;
 }
 
 #couvertSelector {
@@ -8,17 +8,21 @@ button.btn-flat {
 }
 
 div.input-container {
-    width: 25%;
+    width: 8%;
     margin: auto;
 }
 
-ul.summaryList {
-    width: 45%;
+div.left, div.right {
+    width: 50%;
     display: inline-block;
 }
 
+ul.summary-list {
+    width: 100%;
+}
+
 #summary {
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
 
