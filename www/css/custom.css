@@ -4,6 +4,23 @@ button {
     margin: 25px;
 }
 
-ul {
-    list-style-type: none;
+button.btn-flat {
+    width: 50%;
+    height: 20%;
+}
+
+ul.summaryList {
+    width: 45%;
+    display: inline-block;
+}
+
+#summary {
+    width: 80%;
+    margin: auto;
+}
+
+#summary::after {
+    display:block;
+    content:"";
+    clear:both;
 }

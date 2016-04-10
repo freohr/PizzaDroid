@@ -29,7 +29,7 @@ var app = {
     },
 
     generatePizzasSummary: function () {
-        var tablePizzaList = localStorage.getItem('tablePizzaList');
+        var tablePizzaList = JSON.parse(localStorage.getItem('tablePizzaList'));
         var qty = localStorage.getItem('qty');
 
         var ulPizza = document.createElement('ul');
@@ -40,8 +40,9 @@ var app = {
 
             var li = document.createElement('li');
             var button = document.createElement('button');
-            button.className = 'pizza';
+            button.className = 'waves-effect waves-teal btn-flat pizza';
             button.id = i;
+            button.textContent = pizza.name;
             button.addEventListener('click', this.selectPizza, false);
 
             li.appendChild(button);
@@ -54,7 +55,7 @@ var app = {
     },
 
     generateDrinksSummary: function () {
-        var tableDrinkList = localStorage.getItem('tableDrinkList');
+        var tableDrinkList = JSON.parse(localStorage.getItem('tableDrinkList'));
         var qty = localStorage.getItem('qty');
 
         var ulDrink = document.createElement('ul');
@@ -65,8 +66,9 @@ var app = {
 
             var li = document.createElement('li');
             var button = document.createElement('button');
-            button.className = 'drink';
+            button.className = 'waves-effect waves-teal btn-flat drink';
             button.id = i;
+            button.textContent = drink.name;
             button.addEventListener('click', this.selectDrink, false);
 
             li.appendChild(button);

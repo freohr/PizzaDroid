@@ -54,22 +54,22 @@ var app = {
 
         localStorage.setItem('qty', qty);
 
-        var tablePizzaList = [];
-        var tableDrinkList = [];
+        var tablePizzaList = new Array();
+        var tableDrinkList = new Array();
 
         for(var i = 0; i < qty; i++) {
             var drink = {};
             drink.name = "Choisir une boisson";
 
-            tableDrinkList.append(`${i}`, drink);
+            tableDrinkList[i] = drink;
 
             var pizza = {};
             pizza.name = "Choisir une pizza"
-            tablePizzaList.append(`${i}`, pizza);
+            tablePizzaList[i] = pizza;
         }
 
-        localStorage.setItem('tablePizzaList', tablePizzaList);
-        localStorage.setItem('tableDrinkList', tableDrinkList);
+        localStorage.setItem('tablePizzaList', JSON.stringify(tablePizzaList));
+        localStorage.setItem('tableDrinkList', JSON.stringify(tableDrinkList));
 
         window.location = 'summary.html';
 
