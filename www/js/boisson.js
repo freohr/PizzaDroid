@@ -25,7 +25,7 @@ app = {
             button.className = 'waves-effect waves-light waves-teal btn';
             button.id = index;
             button.textContent = item.name + ' : ' + item.price + '€';
-            button.addEventListener('click', this.temp, false);
+            button.addEventListener('click', this.addDrink, false);
 
             li.appendChild(button);
             ulDrink.appendChild(li);
@@ -35,7 +35,7 @@ app = {
         summary.appendChild(ulDrink);
     },
 
-    addDrink: function () {
+    addDrink: function (event) {
         //drink
         var choosenDrink = localStorage.getItem('currentChosenDrink');
         //get pizza name and price in the menu
